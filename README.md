@@ -79,7 +79,7 @@ There are 4 different access levels:
 | `WithArg`           | Enabled for Editor and Debug builds. Can be enabled for Release by adding -developer as a command line arg |
 | `All`               | Always enabled |
 
-When using the WithArg access level you will be required to execute the application with the **-developer** command line argument if you wish to enable the console. This can be easily done in Windows by creating a shortcut you your executable and appending the argument to the target
+When using the WithArg access level you will be required to execute the application with the **-developer** command line argument if you wish to enable the console. This can be easily done in Windows by creating a shortcut to your executable and appending the argument to the target
 
 ![image](https://github.com/hamsterbyte/Godot-4.x-.NET-Developer-Console/assets/34613447/887562fe-61bf-4547-bc96-9ceba442ed90)
 
@@ -206,7 +206,7 @@ Below you will see a few more advanced examples, one returns a Task<bool> and on
     [ConsoleCommand(Prefix = "Math",
       Description = "Print a list of all prime numbers from start to end. Start is always greater than 2.")]
     private static async Task ListPrimes(long start, long end){
-        start = start < 3 ? 3 : start;
+        start = start < 2 ? 2 : start;
         for (long i = start; i <= end; i++){
             Task<bool> primeCheckTask = IsPrime(i);
             await primeCheckTask;
