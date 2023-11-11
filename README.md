@@ -1,5 +1,5 @@
 
-# Developer Console for Godot 4.0+ .NET version 1.0b
+# Developer Console for Godot 4.0+ .NET
 
 This is an implementation of a developer console in Godot 4.0+ .NET using C#. This tool can be used to execute logic in a build that modifies the properties or mechanics of your game without having to change them in the Godot editor and rebuild the project.
 
